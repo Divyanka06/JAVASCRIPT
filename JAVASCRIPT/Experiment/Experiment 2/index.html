@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Billing Calculator</h1>
+
+        <div class="student-info">
+            <p><strong>Name:</strong> Divyanka Chakole</p>
+            <p><strong>PRN:</strong> 24070521149</p>
+        </div>
+
+        <div class="form-group">
+            <label>Customer Name</label>
+            <input type="text" id="customerName">
+        </div>
+
+        <div class="form-group">
+            <label>Units / Quantity</label>
+            <input type="number" id="units">
+        </div>
+
+        <div class="form-group">
+            <label>Rate per Unit (₹)</label>
+            <input type="number" id="rate">
+        </div>
+
+        <div class="form-group">
+            <label>Discount (%)</label>
+            <input type="number" id="discount">
+        </div>
+
+        <button onclick="calculateBill()">Calculate Bill</button>
+
+        <div id="result"></div>
+
+        <button onclick="resetForm()">Calculate Another</button>
+
+        <p class="footer">
+            This page demonstrates JavaScript calculations and DOM updates.
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
