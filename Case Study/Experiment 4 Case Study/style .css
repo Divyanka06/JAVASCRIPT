@@ -1,0 +1,50 @@
+body { 
+    font-family: Arial, sans-serif; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    background: #f0f2f5; 
+    margin: 0; 
+}
+.atm-card { 
+    background: white; 
+    padding: 30px; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+    text-align: center; 
+    width: 320px; 
+}
+input { 
+    width: 80%; 
+    padding: 10px; 
+    margin: 15px 0; 
+    border: 2px solid #ccc; 
+    border-radius: 6px; 
+    font-size: 16px; 
+    text-align: center; 
+}
+button { 
+    background: #007bff; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 6px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    font-weight: bold; 
+}
+button:hover { 
+    background: #0056b3; 
+}
+#status { 
+    margin-top: 15px; 
+    font-weight: bold; 
+    font-size: 16px; 
+}
+.weak { 
+    color: #dc3545; 
+}
+.strong { 
+    color: #28a745; 
+}
