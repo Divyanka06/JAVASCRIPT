@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Experiment 1</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal JavaScript -->
+    <script>
+        console.log("Internal JavaScript loaded");
+
+        function showInternalMessage() {
+            const status = document.getElementById("internalStatus");
+            status.textContent = "Internal JavaScript has updated this text.";
+            status.style.color = "#2563eb";
+        }
+    </script>
+
+    <!-- External JavaScript -->
+    <script src="experiment1.js"></script>
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <h1 class="page-title">Welcome</h1>
+
+    <div class="internal-card">
+        <span class="section-label">Internal CSS Example</span>
+        <h2 class="internal-heading">Welcome to Internal CSS</h2>
+        <p>Name: DIVYANKA CHAKOLE</p>
+        <p>PRN: 24070521149</p>
+    </div>
+
+    <div class="inline-card">
+        <span class="section-label" style="color:#16a34a;">Inline CSS Example</span>
+        <h2 class="inline-heading">Welcome to Inline CSS</h2>
+        <p>Name: DIVYANKA CHAKOLE</p>
+        <p>PRN: 24070521149</p>
+    </div>
+
+    <div class="external-card">
+        <span class="section-label" style="color:#dc2626;">External CSS Example</span>
+        <h2 class="external-heading">Welcome to External CSS</h2>
+        <p>Name: DIVYANKA CHAKOLE</p>
+        <p>PRN: 24070521149</p>
+
+        <button class="button-primary" onclick="showAlert(); externalUpdate();">
+            Click Me
+        </button>
+    </div>
+
+    <p id="externalNote" class="external-note">
+        Welcome to JavaScript Programming!
+    </p>
+
+    <div class="actions-row">
+        <button class="button-primary" onclick="showInternalMessage()">
+            Internal JS Update
+        </button>
+
+        <button class="button-primary"
+            onclick="console.log('Inline JS fired'); alert('Inline JavaScript Action!');">
+            Inline JS Action
+        </button>
+    </div>
+
+    <p id="internalStatus" class="code-note">
+        Internal JavaScript is ready.
+    </p>
+
+</div>
+
+<script>
+    console.log("Page Loaded Successfully");
+</script>
+
+</body>
+</html>
