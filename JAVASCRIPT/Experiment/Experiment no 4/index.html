@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM PIN Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1>ATM PIN Checker</h1>
+        <form id="checkForm">
+            <div class="input-group">
+                <label for="pin">Enter ATM PIN</label>
+                <input 
+                    type="password" 
+                    id="pin" 
+                    maxlength="4" 
+                    placeholder="••••" 
+                    inputmode="numeric" 
+                    pattern="\d{4}" 
+                    required
+                >
+            </div>
+            <button type="submit">Check</button>
+        </form>
+
+        <!-- Message container for JavaScript output -->
+        <div id="results" class="results"></div>
+    </div>
+
+    <script src="passwordChecker.js"></script>
+</body>
+</html>

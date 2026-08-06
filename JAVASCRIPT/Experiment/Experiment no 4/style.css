@@ -1,0 +1,106 @@
+/* Base Layout */
+body {
+    background-color: #eef2f7;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Card */
+.card {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    width: 440px;
+    box-sizing: border-box;
+}
+
+/* Typography */
+h1 {
+    color: #1a365d;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    color: #333333;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Input Fields */
+input {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    color: #333333;
+    padding: 12px 15px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #2563eb;
+}
+
+/* Button */
+button {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 14px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: background-color 0.15s ease;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Dynamic Results Container */
+.results {
+    border-radius: 6px;
+    font-size: 14px;
+    display: none; /* Hidden until class is active */
+}
+
+.results.error,
+.results.success {
+    display: block;
+}
+
+.results p {
+    margin: 0;
+    padding: 20px;
+}
+
+/* Alert Colors matching the UI screenshots */
+.results.success {
+    background-color: #e2f8ec;
+    color: #15803d;
+}
+
+.results.error {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
