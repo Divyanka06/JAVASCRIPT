@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <!-- Ambient Glow Elements -->
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+
+        <h2>Titan Fitness Admission</h2>
+        
+        <form id="gymForm" novalidate>
+            <!-- Name Input -->
+            <div class="input-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter your name" required>
+                <span class="error-msg" id="nameError">Name must be at least 3 characters.</span>
+            </div>
+
+            <!-- Email Input -->
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <span class="error-msg" id="emailError">Please enter a valid email address.</span>
+            </div>
+
+            <!-- Phone Input -->
+            <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="10-digit mobile number" required>
+                <span class="error-msg" id="phoneError">Enter a valid 10-digit number.</span>
+            </div>
+
+            <!-- Age Input -->
+            <div class="input-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" placeholder="Must be 16 or older" required>
+                <span class="error-msg" id="ageError">Age must be between 16 and 100.</span>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submitBtn">Submit Application</button>
+        </form>
+
+        <!-- Footer Student Info -->
+        <div class="student-info">
+            <p>Divyanka Chakole</p>
+            <p>24070521149</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
